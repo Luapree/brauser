@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>brauser</title>
+	<link rel="stylesheet" href="stylesheet/style.css">
+<style> 
+    body {
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: black;
+      color: white;
+    }
+@font-face {
+  font-family: myFont;
+  src: url(font/ReadexPro-VariableFont_HEXP,wght.woff2) format("woff2");
+}
+* {
+   font-family: myFont;
+}
+  </style>
+</head>
+ <body>
+  <div class="container">
+  <button id="mode-toggle" class="myButton" >Cambiar modo</button><br>
+  <h1>Bienvenido a brauser!</h1>
+<script type="text/javascript" src="https://counter.websiteout.com/js/15/6/0/1"></script><br>
+  <p>Tu navegador es un:</p>
+  <script>
+  document.write(window.navigator.userAgent);
+  </script>
+  <h5>ver informacion detallada <a href="https://explore.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes">aqui</a></h5>
+<p>Usa esto si quieres ir a cualquier lugar en la web! (no escribas "https://" al principio, la web no lo cargara, por ejemplo, en vez de poner "https://hola.com", pon solo "hola.com")</p>
+<div class="container">
+        <input placeholder="Introduce tu URL aqui" class="form-control" type="text" id="field" onkeydown="if (event.keyCode == 13) loadurl();">
+        <button class="myButton"  onclick="loadurl();">
+           Cargar
+        </button>
+	</div>
+<script type="text/javascript">
+	function loadurl() {
+		var input2 = document.getElementById("field").value;
+		if(input2 !== "") {
+			if(!input2.toLowerCase().startsWith("http://") && !input2.toLowerCase().startsWith("https://")) {
+				input2 = "https://" + input2;
+				window.location.href = input2;
+			}
+		}
+	};
+  </script>
+<p>Si no tienes un teclado para escribir arriba, puedes usar estos enlaces utiles:</p>
+	  <h2>Enlaces utiles</h2>
+	<div>
+  <ul>
+    <li><a href="https://github.com/luarpri/brauser">Codigo fuente</a></li>
+    <li><a href="https://google.com">Google</a></li>
+    <li><a href="https://archive.org/">Archive.org</a></li>
+	  <li><a href="https://fakebsod.com/">FakeBsod</a></li>
+    <li><a href="http://slither.com/io">Slither.io</a></li>
+    <li><a href="https://wikipedia.org/">Wikipedia</a></li>
+    <li><a href="https://classic.minecraft.net/">Minecraft Classic</a></li>
+  </ul>
+  <p>Posiblemente vayas a usar esto si tu dispositivo tiene oculto el escritorio (permite entrar en el explorador de archivos)</p>
+  <input type="file" id="file">
+</div>
+  <script src="script/darkmode.js"></script>
+</body>
+</html>
