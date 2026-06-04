@@ -1,5 +1,8 @@
 # brauser
 <a href="https://github.com/Luapree/brauser/actions/workflows/pages/pages-build-deployment/"><img src="https://github.com/Luapree/brauser/actions/workflows/pages/pages-build-deployment/badge.svg" alt="compilar"></a><br>
+<a href="https://discord.gg/yManCTBmq"><img alt="Discord" src="https://img.shields.io/discord/1408875318248345612?style=flat&logo=discord&label=Discord%20Server&link=https%3A%2F%2Fdiscord.gg%yManCTBmq"></a>
+</p>
+
 Brauser es una "pagina de aterrizaje" para basicamente cualquier cosa que use tecnologia web, iframes, juegos de Construct, aplicaciones webview , etc<br>
 
 # Ejecutar localmente
