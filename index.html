@@ -25,18 +25,18 @@
  <body>
   <div class="container">
   <button id="mode-toggle" class="myButton" >Cambiar modo</button><br>
-  <h1>Bienvenido a brauser!</h1>
+  <h1>Brauser!</h1>
 <script type="text/javascript" src="https://counter.websiteout.com/js/15/6/0/1"></script><br>
-  <p>Tu navegador es un:</p>
+  <p>Your user agent is:</p>
   <script>
   document.write(window.navigator.userAgent);
   </script>
-  <h5>ver informacion detallada <a href="https://explore.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes">aqui</a></h5>
-<p>Usa esto si quieres ir a cualquier lugar en la web! (no escribas "https://" al principio, la web no lo cargara, por ejemplo, en vez de poner "https://hola.com", pon solo "hola.com")</p>
+  <h5>look at detailed info: <a href="https://explore.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes">aqui</a></h5>
+<p>Use this to enter any URL (do not write https:// at the start of the link)</p>
 <div class="container">
-        <input placeholder="Introduce tu URL aqui" class="form-control" type="text" id="field" onkeydown="if (event.keyCode == 13) loadurl();">
+        <input placeholder="URL:" class="form-control" type="text" id="field" onkeydown="if (event.keyCode == 13) loadurl();">
         <button class="myButton"  onclick="loadurl();">
-           Cargar
+           Load
         </button>
 	</div>
 <script type="text/javascript">
@@ -50,8 +50,8 @@
 		}
 	};
   </script>
-<p>Si no tienes un teclado para escribir arriba, puedes usar estos enlaces utiles:</p>
-	  <h2>Enlaces utiles</h2>
+<p>If you dont have a keyboard, you can use this links:</p>
+	  <h2>Useful links:</h2>
 	<div>
   <ul>
     <li><a href="https://github.com/luapree/brauser">Codigo fuente</a></li>
@@ -62,7 +62,7 @@
     <li><a href="https://wikipedia.org/">Wikipedia</a></li>
     <li><a href="https://classic.minecraft.net/">Minecraft Classic</a></li>
   </ul>
-  <p>Posiblemente vayas a usar esto si tu dispositivo tiene oculto el escritorio (permite entrar en el explorador de archivos)</p>
+  <p>Use this button if you want to use the file explorer on your device, useful if you have a hidden desktop</p>
   <input type="file" id="file">
 </div>
   <script src="script/darkmode.js"></script>
