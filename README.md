@@ -3,16 +3,25 @@
 <a href="https://discord.gg/yManCTBmq"><img alt="Discord" src="https://img.shields.io/discord/1408875318248345612?style=flat&logo=discord&label=Discord%20Server&link=https%3A%2F%2Fdiscord.gg%yManCTBmq"></a>
 </p>
 
-Brauser es una "pagina de aterrizaje" para basicamente cualquier cosa que use tecnologia web, iframes, juegos de Construct, aplicaciones webview , etc<br>
+brauser is a custom lightweight homepage intended for devices not intended to browse the internet<br>
 
-# Ejecutar localmente
+### Running locally
+#### Python
+You can host brauser simply by using python
 
+    python -m http.server<br>
 
-## 1. Descargar el repositorio<br>
-     - Pulsa el boton verde "<> Code"
-     - Pulsa en "download as zip"
-     - Extrae el archivo zip con tu descompresor de prefencia
-## 2. Ejecutar
-     - Descarga Python (desde la web ofical, no desde Microsoft Store)
-     - Ejecuta en una ventana de terminal dentro de la carpeta que acabas de descomprimir `python -m http.server`
-     - Brauser se estara ejecutando en https://localhost:8000
+#### Docker
+You can use the included dockerfile<br>
+
+Build:<br>
+
+`docker build -t brauser .`<br>
+
+Run:<br>
+
+`docker run -d --name brauser -P brauser`
+
+## Lisence
+
+[MIT Lisence](https://github.com/Luapree/brauser/blob/main/LICENSE)
