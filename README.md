@@ -16,7 +16,7 @@ You can use the included dockerfile<br>
 
 Build:<br>
 
-`docker build -t brauser .`<br>
+`docker build -t brauser .`
 
 Run:<br>
 
