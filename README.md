@@ -12,7 +12,7 @@ You can host brauser simply by using python
     python -m http.server
 
 #### Docker
-You can use the included dockerfile<br>
+You can also use the included dockerfile<br>
 
 Build:<br>
 
