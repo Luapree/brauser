@@ -9,7 +9,7 @@ brauser is a custom lightweight homepage intended for devices not intended to br
 #### Python
 You can host brauser simply by using python
 
-    python -m http.server<br>
+    python -m http.server
 
 #### Docker
 You can use the included dockerfile<br>
